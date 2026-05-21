@@ -2,15 +2,7 @@ name: Linux Build
 on: [push,pull_request]
 jobs:
   build:
-    name: Build on Linux
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - compiler: gcc
-            cxx: g++
-          - compiler: clang
-            cxx: clang++
     steps:
       uses: actions/checkout@v4
 
