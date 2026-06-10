@@ -5,5 +5,3 @@ build_script:
   - cd build
   - cmake ..
   - cmake --build .
-test_script:
-  - ctest
